@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immersive 3d</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      @media screen and (max-width: 1200px) {
+          h1 { font-size: 50px; }
+          h3 {font-size:25px}
+          .slideshow-box{width: 100%; margin: auto; margin-top: 70vh;}
+          .immersive3d-text p {font-size: 20px; line-height: 30px;}
+          .immersive3d-text{width: 84%; display:block;margin: auto;height: 75vh;}
+          .immersive3d-image{width:84%; display: block; margin: auto; padding: 10vh 0;}
+          
+      }
+      @media screen and (max-width: 600px) {
+          .immersive3d-text{width: 84%; display:block;margin: auto;height: 100vh;}
+          .slideshow-box{margin-top: 60vh;}          
+      }
+      </style>
+</head>
+<body>
+    <div id="navigation" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="design_trends2023.html">Landing page</a>
+        <button class="dropdown-btn">Design trends
+            <i class="arrow"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="glassmorphism.html">Glassmorphism</a>
+            <a href="immersive3d.html">Immersive 3d</a>
+            <a href="neobrutalism.html">Neobrutalism</a>
+            <a href="web3.html">Web 3</a>
+          </div>
+        <a href="contacts.html">Contact</a>
+      </div>
+      <nav>
+        <div><a href="design_trends2023.html" id="topLeft"><b>DESIGN <br>TRENDS </b></a></div>
+        <ul>
+            <li><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></li>
+        </ul>
+    </nav>
+      <section class="immersive3d">
+        <div class="immersive3d-first-part">
+          <h2>Immersive 3d</h2>
+          <div class="immersive3d-text">
+            <p>Last year, many websites favored immersive scrolling experiences that pulled viewers into the page. Partially thanks to a continued interest in VR tech, this trend has now evolved into completely immersive websites—fully rendered 3D worlds.</p>
+            <br>
+            <p>While these website worlds tend to be more stylistic than realistic, that is exactly what makes them appealing—they are imaginative, escapist spaces that users will want to lose themselves in. At their best, they challenge the many stale layouts that orient the page around a CTA button. These websites trust the visual experience to leave a lasting mark on visitors instead.</p>
+          </div> 
+              
+          <div class="immersive3d-image"><img src="images/immersive3d-image.jpg"></div>
+        </div>
+        
+        <div class="slideshow-box">
+              <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  
+                  <img src="images/immersive3d-slide1.png" style="width:100%">
+                  <div class="slideshow-text">Timescope - project management system</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  
+                  <img src="images/immersive3d-slide2.gif" style="width:100%">
+                  <div class="slideshow-text">Panasonic Connect</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  
+                  <img src="images/immersive3d-slide3.png" style="width:100%">
+                  <div class="slideshow-text">Joshuas world - Joshua von Hofen's portfolio</div>
+                </div>
+              
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+        </div>
+
+      </section>
+
+      <footer>
+        <div class="social-media">
+          <ul class="social-li">
+              <li><a href="https://www.behance.net/drasat"><image class="social" src="images/behance.png"></i></a></li>
+              <li><a href="https://github.com/drasat-design"><image class="social" src="images/github.png"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/stefan-petkov-/"><image class="social" src="images/linkedin.png"></i></a></li>
+          </ul>
+      </div>
+        <div class="footer-text">
+            <p>Created by Stefan Petkov</p>
+        </div>
+    </footer>
+
+    <script src="nav.js"></script>
+    <script src="slideshow.js"></script>
+</body>
+</html>

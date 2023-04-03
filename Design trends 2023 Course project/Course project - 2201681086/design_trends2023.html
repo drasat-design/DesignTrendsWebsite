@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Trends 2023</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media screen and (max-width: 1000px) {
+            .hexagon-gallery {
+                max-width: 800px;
+                grid-auto-rows: 150px;
+                grid-gap: 14px;
+                padding-bottom: 50px;
+            }
+            .hex {width: 180px; height: 188px;}
+            .hex:first-child:hover {width: 198px; height: 207px;}
+            .hex:nth-child(2):hover {width: 198px; height: 207px;}
+            .hex:nth-child(3):hover {width: 198px; height: 207px;}
+            .hex:nth-child(4):hover {width: 198px; height: 207px;}
+        }
+        @media screen and (max-width: 600px) {
+            .text-box h1 { font-size: 5em; }
+            .text-box h3 {font-size: 3em; }
+            .hexagon-gallery {
+                max-width: 800px;
+                grid-auto-rows: 100px;
+                grid-gap: 7px;
+                padding-bottom: 25px;
+            }
+            .hex {width: 120px; height: 133px;}
+            .hex:first-child:hover {width: 132px; height: 146px;}
+            .hex:nth-child(2):hover {width: 132px; height: 146px;}
+            .hex:nth-child(3):hover {width: 132px; height: 146px;}
+            .hex:nth-child(4):hover {width: 132px; height: 146px;}
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="navigation" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="design_trends2023.html">Landing page</a>
+        <button class="dropdown-btn">Design trends
+            <i class="arrow"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="glassmorphism.html">Glassmorphism</a>
+            <a href="immersive3d.html">Immersive 3d</a>
+            <a href="neobrutalism.html">Neobrutalism</a>
+            <a href="web3.html">Web 3</a>
+          </div>
+        <a href="contacts.html">Contact</a>
+      </div>
+      <nav>
+        <div><a href="design_trends2023.html" id="topLeft"><b>DESIGN <br>TRENDS </b></a></div>
+        <ul>
+
+            <li><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></li>
+        </ul>
+    </nav>
+    <div class="landing-background">
+        
+        <div class="text-box">
+            <h1>DESIGN TRENDS</h1>
+            <h3>FOR 2023</h3>
+            <div class="row">
+                <a href="glassmorphism.html">Explore</a>
+                <a href="">Contact</a>
+                <span>This website showcases some of the web design trends that are expected for 2023.</span>
+            </div>
+            
+        </div>
+    </div>
+    <section class="gallery">
+        <div class="hexagon-gallery">
+            <div class="hex" id="glassmorphism"><a href="glassmorphism.html"><img src="images/hex-glass.png" alt="some"></a></div>
+            <div class="hex" id="immersive3d"><a href="immersive3d.html"><img src="images/hex-3d.jpg" alt="some"></a></div>
+            <div class="hex" id="neubrutalism"><a href="neobrutalism.html"><img src="images/hex-neubrutalism.jpg" alt="some"></a></div>
+            <div class="hex" id="web3"><a href="web3.html"><img src="images/hex-web3.jpg" alt="some"></a></div>
+        </div>
+    </section>
+    <footer>
+        <div class="social-media">
+            <ul class="social-li">
+                <li><a href="https://www.behance.net/drasat"><image class="social" src="images/behance.png"></i></a></li>
+                <li><a href="https://github.com/drasat-design"><image class="social" src="images/github.png"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/stefan-petkov-/"><image class="social" src="images/linkedin.png"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-text">
+            <p>Created by Stefan Petkov</p>
+        </div>
+    </footer>
+    
+    <script src="nav.js"></script>
+</body>
+</html>

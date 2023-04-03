@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="contactValidation.js"></script>
+    <style>
+        @media screen and (max-width: 800px) {
+            .row{
+                display: block;
+            }
+            .column{
+                width: 100%;
+                padding: 0px 10px;
+                
+            }
+            label {
+                padding-top: 10px;
+            }
+            input {
+                margin-bottom: 0;
+            }
+            .submit {
+                position: absolute;
+                left: 40%;
+                width: 10%;
+            }
+            .contact-box {
+                height: 90vh;
+            }
+        }
+    </style>
+</head>
+<body onload='document.contactForm.password.focus(), GetDate()'>
+    <div id="navigation" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="design_trends2023.html">Landing page</a>
+        <button class="dropdown-btn">Design trends
+            <i class="arrow"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="glassmorphism.html">Glassmorphism</a>
+            <a href="immersive3d.html">Immersive 3d</a>
+            <a href="neobrutalism.html">Neobrutalism</a>
+            <a href="web3.html">Web 3</a>
+          </div>
+        <a href="contacts.html">Contact</a>
+    </div>
+    <nav>
+        <div><a href="design_trends2023.html" id="topLeft"><b>DESIGN <br>TRENDS </b></a></div>
+        <ul>
+            <li><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></li>
+        </ul>
+    </nav>
+    <section class="contact">
+        
+        <div class="contact-box">
+            <form action="#" name="contactForm">
+                <div class="row">
+                    <div class="column">
+                        <label>First name</label>
+                    <input type="text" placeholder="John">
+                    </div>
+                    <div class="column">
+                        <label>Last name</label>
+                    <input type="text" placeholder="Smith">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <label>Email</label>
+                        <input type="email" placeholder="example@mail.com" oninput="validateEmail()">
+                    </div>
+                    <div class="column">
+                        <label>Password</label>
+                        <input type="password" id="password" placeholder="Must contain lower and upper case, numbers and symbols" oninput="CheckPassword()">
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <label>Message</label>
+                        <textarea placeholder="Write a message"></textarea>
+                    </div>
+                    <div class="column">
+                        <label>Reserve a design consultation</label>
+                        <input type="date" id="meeting-time" name="meeting-time" min="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="submit">
+                        <input type="submit" name="submit" value="Submit" onclick="CheckPassword(document.contactForm.password)">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div class="social-media">
+            <ul class="social-li">
+                <li><a href="https://www.behance.net/drasat"><image class="social" src="images/behance.png"></i></a></li>
+                <li><a href="https://github.com/drasat-design"><image class="social" src="images/github.png"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/stefan-petkov-/"><image class="social" src="images/linkedin.png"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-text">
+            <p>Created by Stefan Petkov</p>
+        </div>
+    </footer>
+
+    <script src="nav.js"></script>
+    <script src="contactValidation.js"></script>
+</body>
+</html>

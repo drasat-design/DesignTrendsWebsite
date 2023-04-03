@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neobrutalism</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    @media screen and (max-width: 1200px) {
+        h1 { font-size: 50px; }
+        h3 {font-size:25px}
+        .slideshow-box{width: 100%; margin: auto; margin-top: 80vh;}
+        .nb-text p {font-size: 20px; line-height: 30px;}
+        .nb-text{width: 84%; display:block;margin: auto;height: 75vh;}
+        .nb-image{width:84%; display: block; margin: auto; padding: 10vh 0;}
+        
+    }
+    @media screen and (max-width: 600px) {
+          .immersive3d-text{width: 84%; display:block;margin: auto;height: 80vh;}
+          
+      }
+    </style>
+
+</head>
+<body>
+    <div id="navigation" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="design_trends2023.html">Landing page</a>
+        <button class="dropdown-btn">Design trends
+            <i class="arrow"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="glassmorphism.html">Glassmorphism</a>
+            <a href="immersive3d.html">Immersive 3d</a>
+            <a href="neobrutalism.html">Neobrutalism</a>
+            <a href="web3.html">Web 3</a>
+          </div>
+        <a href="contacts.html">Contact</a>
+      </div>
+      <nav>
+        <div><a href="design_trends2023.html" id="topLeft"><b>DESIGN <br>TRENDS </b></a></div>
+        <ul>
+            <li><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></li>
+        </ul>
+    </nav>
+      <section class="neobrutalism">
+            <div class="nb-first-part">
+                <h2>Neubrutalism</h2>
+                <div class="nb-text">
+                    <p>Neubrutalism takes recent website trends to the next level—it retains its edge while also combining the unusual style with more modern animation, illustration, and text standards. Although neubrutalism is an unofficial term right now, it’s already being talked about in the world of web design and it’s the sort of thing which sticks, so it's great to get ahead of the curve!</p>
+                    <br>
+                    <p> Characteristics:</p>
+                    <ul>
+                        <li><p>Clashing colours</p></li>
+                        <li><p>No gradients</p></li>
+                        <li><p>Unique typography</p></li>
+                        <li><p>Animations</p></li>
+                    </ul>
+                </div>
+                <div class="nb-image"><img src="images/nb-image.jpg"></div>
+            </div>
+
+            <div class="slideshow-box">
+                <div class="slideshow-container">
+    
+                    <div class="mySlides fade">
+                    
+                    <img src="images/nb-slide1.jpg" style="width:100%">
+                    <div class="slideshow-text">Gumroad - ecommerce platform</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    
+                    <img src="images/nb-slide2.jpg" style="width:100%">
+                    <div class="slideshow-text">Chirstou 1910 Days</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    
+                    <img src="images/nb-slide3.png" style="width:100%">
+                    <div class="slideshow-text">HGB Leipzig</div>
+                    </div>
+                
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+
+      </section>
+
+      <footer>
+        <div class="social-media">
+            <ul class="social-li">
+                <li><a href="https://www.behance.net/drasat"><image class="social" src="images/behance.png"></i></a></li>
+                <li><a href="https://github.com/drasat-design"><image class="social" src="images/github.png"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/stefan-petkov-/"><image class="social" src="images/linkedin.png"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-text">
+            <p>Created by Stefan Petkov</p>
+        </div>
+    </footer>
+
+    <script src="nav.js"></script>
+    <script src="slideshow.js"></script>
+</body>
+</html>
